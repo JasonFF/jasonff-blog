@@ -1,2 +1,0 @@
-# jasonff-blog
-jasonff-blog
