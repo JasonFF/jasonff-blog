@@ -22,13 +22,6 @@ sagaMiddleware.run(rootSaga)
 const action = type => store.dispatch({type})
 
 ReactDOM.render(
-  <Root>
-    <MyPage
-      value={store.getState()}
-      onIncrement={() => action('INCREMENT')}
-      onDecrement={() => action('DECREMENT')}
-      onIncrementIfOdd={() => action('INCREMENT_IF_ODD')}
-      onIncrementAsync={() => action('INCREMENT_ASYNC')} />
-  </Root>,
+  <Root store={store}/>,
   document.getElementById('root')
 )
